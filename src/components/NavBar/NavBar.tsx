@@ -8,7 +8,10 @@ const NavBar = () => {
   }));
   return (
     <>
-      <AppBar position="absolute">
+      <AppBar
+        position="absolute"
+        style={{ backgroundColor: 'rgb(35,35,35, 0.8)' }}
+      >
         <StyledToolbar>
           <MenuItem>About</MenuItem>
           <MenuItem>Skills</MenuItem>

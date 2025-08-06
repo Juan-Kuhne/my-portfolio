@@ -11,11 +11,20 @@ const Hero = () => {
     height: '100vh',
     display: 'flex',
     alignItems: 'center',
+    [theme.breakpoints.up('xs')]: {
+      paddingTop: '8vh',
+    },
   }));
   const StyledImg = styled('img')(() => ({
     width: '80%',
     borderRadius: '50%',
     border: `1px solid ${theme.palette.primary.contrastText}`,
+    [theme.breakpoints.up('xs')]: {
+      width: '80%',
+    },
+    [theme.breakpoints.up('md')]: {
+      width: '90%',
+    },
   }));
   return (
     <>
